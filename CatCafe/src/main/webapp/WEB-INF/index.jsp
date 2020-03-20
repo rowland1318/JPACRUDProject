@@ -16,6 +16,9 @@
   Cat ID: <input type="text" name="cid" class="form-control"/>
   <input type="submit" value="Show Cat" class="form-control"/>
 </form>
+<form action="createCatPage.do" method="GET" class="form">
+  <input type="submit" value="Add Cat" class="form-control"/>
+</form>
 
 <table class="table table-striped">
  <thead class="thead thead-dark">
