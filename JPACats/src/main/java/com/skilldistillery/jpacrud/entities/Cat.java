@@ -1,6 +1,8 @@
 package com.skilldistillery.jpacrud.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -16,7 +18,8 @@ public class Cat {
 	private String color;
 	private String breed;
 	private int age;
-	private String gender;
+	@Enumerated(EnumType.STRING)
+	private Gender gender;
 	
 	//C O N S T R U C T O R S
 
@@ -24,7 +27,7 @@ public class Cat {
 		super();
 	}
 
-	public Cat(int id, String name, String color, String breed, int age, String gender) {
+	public Cat(int id, String name, String color, String breed, int age, Gender gender) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -34,7 +37,12 @@ public class Cat {
 		this.gender = gender;
 	}
 	
+	
 	// G E T T E R S    A N D    S E T T E R S 
+
+
+
+
 
 	public int getId() {
 		return id;
@@ -76,11 +84,11 @@ public class Cat {
 		this.age = age;
 	}
 
-	public String getGender() {
+	public Gender getGender() {
 		return gender;
 	}
 
-	public void setGender(String gender) {
+	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
 
@@ -93,4 +101,6 @@ public class Cat {
 		return builder.toString();
 	}
 
+	
+	
 }

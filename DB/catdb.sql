@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `cat` (
   `color` VARCHAR(45) NULL,
   `breed` VARCHAR(45) NULL,
   `age` INT NULL,
-  `gender` VARCHAR(45) NULL,
+  `gender` ENUM('F', 'M', 'U') NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -47,6 +47,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 START TRANSACTION;
 USE `catdb`;
 INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (1, 'Sylvester', 'Black', 'Tuxedo', 4, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (2, 'Garfield', 'Orange', 'Tabby Tomcat', 10, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (3, 'Tom Cat', 'Gray', 'Domestic Short Hair', 7, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (4, 'Scat Cat', 'Black', 'Tuxedo', 14, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (5, 'Duchess', 'White', 'Turkish Angora', 8, 'F');
 
 COMMIT;
 

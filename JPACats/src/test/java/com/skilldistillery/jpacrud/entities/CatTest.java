@@ -48,7 +48,7 @@ class CatTest {
 	assertEquals("Sylvester", cat.getName());
 	assertEquals(4, cat.getAge());
 	assertEquals("Tuxedo", cat.getBreed());
-	assertEquals("M", cat.getGender());
+	assertEquals(Gender.M, cat.getGender());
 	assertEquals("Black", cat.getColor());
 	}
 
