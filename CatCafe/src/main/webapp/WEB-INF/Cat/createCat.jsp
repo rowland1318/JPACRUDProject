@@ -38,7 +38,7 @@
 					class="btn btn-secondary dropdown-toggle" required>
 					<option value="M">M</option>
 					<option value="F">F</option>
-					<option value="NA">U</option>
+					<option value="U">U</option>
 				</select>
 			</div>
 			<input type="submit" value="Add Cat" class="btn btn-primary" />

@@ -65,7 +65,7 @@ public class CatController {
 			Cat cat = dao.findById(id);
 			ModelAndView mv = new ModelAndView();
 			mv.addObject("cat", cat);
-			mv.setViewName("update");
+			mv.setViewName("Cat/updateCat");
 			return mv;
 		}
 		
