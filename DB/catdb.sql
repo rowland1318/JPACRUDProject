@@ -46,11 +46,16 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `catdb`;
-INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (1, 'Sylvester', 'Black', 'Tuxedo', 4, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (1, 'Sylvester', 'Black, White', 'Tuxedo', 4, 'M');
 INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (2, 'Garfield', 'Orange', 'Tabby Tomcat', 10, 'M');
-INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (3, 'Tom Cat', 'Gray', 'Domestic Short Hair', 7, 'M');
-INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (4, 'Scat Cat', 'Black', 'Tuxedo', 14, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (3, 'Tom Cat', 'Gray, White', 'Domestic Short Hair', 7, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (4, 'Scat Cat', 'Black, Gray', 'Tuxedo', 14, 'M');
 INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (5, 'Duchess', 'White', 'Turkish Angora', 8, 'F');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (6, 'Sassy', 'Orange, Black, White', 'Calico', 13, 'F');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (7, 'Marie', 'White', 'Turkish Angora', 1, 'F');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (8, 'Toulouse', 'Orange', 'Munchkin', 1, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (9, 'Berlioz', 'Gray', 'Chartreux', 1, 'M');
+INSERT INTO `cat` (`id`, `name`, `color`, `breed`, `age`, `gender`) VALUES (10, 'Thomas O\'Malley', 'Orange, White', 'Orange Tabby', 10, 'M');
 
 COMMIT;
 

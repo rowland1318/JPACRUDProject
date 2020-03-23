@@ -47,7 +47,7 @@
 				<th>Age</th>
 				<th>Color</th>
 				<th>Gender</th>
-				<th>Cat ID</th>
+				<th>ID</th>
 				<th></th>
 				<th></th>
 			</tr>
