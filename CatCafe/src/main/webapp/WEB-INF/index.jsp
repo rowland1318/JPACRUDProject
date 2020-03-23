@@ -11,6 +11,24 @@
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 	crossorigin="anonymous">
 <link rel="stylesheet" href="css/myStyles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -40,18 +58,21 @@
   </div>
 </nav>
 	
-<!-- 		<nav class="navbar navbar-dark bg-dark justify-content-between">
-			<a class="navbar-brand">Lookup Cat by ID:</a>
-			<form action="getCat.do" method="GET" class="form-inline">
-				<input class="form-control mr-sm-2" name="cid" type="search"
-					placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
-		</nav> -->
 
 	</div>
 	
-	<img src="../img/catrepublic.jpg" alt="Cat Cafe" class="center" width="500" height="600">
+	<div class="row">
+  <div class="column">
+    <img src="../img/cats.png" alt="Cats" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../img/meandcat.png" alt="Me and Cat" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../img/cat1.png" alt="Cat" style="width:100%">
+  </div>
+</div>
+
 
 </body>
 </html>
