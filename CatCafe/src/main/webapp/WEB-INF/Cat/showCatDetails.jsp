@@ -13,15 +13,18 @@
 </head>
 <body>
 
-<div>
-<a href="home.do">Home</a>
-</div>
 
 	<div class ="container-fluid">
-		<h5>${cat.name}(${cat.age})</h5>
-		<p>${cat.color}</p>
+		<h3>${cat.name}(ID: ${cat.id})</h3>
+		<p>Age: ${cat.age}</p>
+		<p>Color: ${cat.color}</p>
 		<p>Breed: ${cat.breed}</p>
+		<p>Gender: ${cat.gender}</p>
 	</div>
+	
+	<div>
+<a href="home.do">Home</a>
+</div>
 
 </body>
 </html>

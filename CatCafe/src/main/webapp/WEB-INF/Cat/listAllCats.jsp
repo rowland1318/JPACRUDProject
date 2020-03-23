@@ -23,6 +23,7 @@
 				<th>Age</th>
 				<th>Color</th>
 				<th>Gender</th>
+				<th>Cat ID</th>
 				<th></th>
 				<th></th>
 			</tr>
@@ -35,6 +36,7 @@
 					<td>${cat.age}</td>
 					<td>${cat.color}</td>
 					<td>${cat.gender}</td>
+					<td>${cat.id}</td>
 					<td>
 						<form action ="updatePage.do" method = "POST">
 						<input type="hidden" value="${cat.id}" name = "cat"/>
