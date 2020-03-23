@@ -63,13 +63,13 @@
 	
 	<div class="row">
   <div class="column">
-    <img src="../img/cats.png" alt="Cats" style="width:100%">
+    <img src="img/cats.png" alt="Cats" style="width:100%">
   </div>
   <div class="column">
-    <img src="../img/meandcat.png" alt="Me and Cat" style="width:100%">
+    <img src="img/meandcat.png" alt="Me and Cat" style="width:100%">
   </div>
   <div class="column">
-    <img src="../img/cat1.png" alt="Cat" style="width:100%">
+    <img src="img/cat1.png" alt="Cat" style="width:100%">
   </div>
 </div>
 

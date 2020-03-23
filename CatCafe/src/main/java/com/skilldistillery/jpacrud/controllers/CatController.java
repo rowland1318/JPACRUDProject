@@ -57,7 +57,6 @@ public class CatController {
 		return "index";
 	}
 	
-	// update organism
 		@RequestMapping(path = "updatePage.do", method = RequestMethod.POST)
 		public ModelAndView updateCat(@RequestParam("cat") int id) {
 			Cat cat = dao.findById(id);
